@@ -1,0 +1,160 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+:root {
+  --text-color-gray--: #797979;
+  --text-color-white: #fff;
+  --main-color--: #38af90;
+  --box-color--: #f0f0f0;
+  --box-color-red: #dd7e92;
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  margin: 0px;
+  padding: 0px;
+}
+header {
+  background-color: var(--main-color--);
+  height: 90px;
+}
+
+.logo {
+  color: var(--text-color-white);
+  font-size: 1.125rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+@media (min-width: 576px){
+  .logo {
+   font-size: 24px;
+   padding: 3px 0;
+  }
+}
+.logo img{
+  width: 62px;
+
+}
+.Navegation{
+  display: none;
+}
+@media (min-width: 576px){
+  .Navegation{
+    display:flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .Navegation a{
+    color: var(--text-color-white);
+    text-decoration: none;
+    padding: 0px 10px;
+  }
+  .Navegation a:hover{
+    color: unset;
+  }
+}
+.container-title {
+  font-size: 1.5rem;
+  color: var(--text-color-gray--);
+  text-align: center;
+  margin: 40px 0;
+}
+@media (min-width: 576px) {
+  .container-title {
+    font-size: 30px;
+  }
+}
+@media(min-width: 768px){
+  .container-title{
+    font-size: 36px;
+  }
+}
+.container-box {
+  width: 100%;
+  
+}
+@media(min-width: 768px){
+ .container-box{
+  max-width: 990px;
+  margin: 0 auto;
+ } 
+}
+.card-news {
+  background-color: var(--box-color--);
+  border-radius: 8px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  margin: 0 10px 40px;
+  padding: 16px 12px;
+}
+.card-news h3 {
+  font-size: 1rem;
+  line-height: 24px;
+  color: var(--main-color--);
+}
+@media (min-width: 576px) {
+  .card-news h3 {
+    font-size: 20px;
+  }
+}
+@media (min-width: 768px) {
+  .card-news h3 {
+    font-size: 24px;
+  }
+}
+.card-news h4 {
+  font-size: 0.65rem;
+  line-height: 18px;
+  color: var(--text-color-gray--);
+  padding-bottom: 6px;
+}
+@media (min-width: 576px) {
+  .card-news h4 {
+    font-size: 12px;
+  }
+}
+@media (min-width: 768px) {
+  .card-news h4 {
+    font-size: 16px;
+  }
+}
+.data {
+  border-top: 1px solid var(--main-color--);
+  font-size: 10px;
+  color: var(--main-color--);
+  padding: 1px 0 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  max-width: 910px;
+}
+.card-news p {
+  font-size: 0.625rem;
+  color: var(--text-color-gray--);
+  line-height: 15px;
+  padding-bottom: 12px;
+}
+@media (min-width: 576px) {
+  .card-news p {
+    font-size: 12px;
+  }
+}
+
+.card-news a,
+a:hover {
+  text-decoration: none;
+  color: var(--box-color-red);
+  font-weight: 700;
+}
+.button{
+  text-align: center;
+  margin: 30px 0 40px;
+}
+input[type=button]{
+  padding: 20px 55px;
+  border-radius: 8px;
+  background-color: var(--box-color-red);
+  border: none;
+  color: var(--text-color-white);
+  font-size: 1.125rem;
+  font-weight: bold;
+}
