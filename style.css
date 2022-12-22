@@ -14,10 +14,56 @@
   margin: 0px;
   padding: 0px;
 }
+footer {
+  margin-top: 40px;
+  background-color: #383838;
+  height: 302px;
+  font-size: 0.75rem;
+  display: flex;
+}
+@media (min-width: 576px) {
+  footer {
+    height: 200px;
+    display: block;
+    font-size: 14px;
+  }
+}
+.container-footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-around;
+}
+.container-footer p {
+  color: var(--text-color-white);
+  padding: 20px;
+}
+@media (min-width: 576px) {
+  .container-footer {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+  }
+}
+.contact {
+  display: flex;
+  flex-direction: column;
+}
+.politic-user {
+  display: flex;
+  flex-direction: column;
+}
 
+a,
+a:hover {
+  text-decoration: none;
+  color: var(--text-color-white);
+}
 header {
   background-color: var(--main-color--);
-  box-shadow: 0px 2px 4px 0px #000000BF;
+  box-shadow: 0px 2px 4px 0px #000000bf;
   height: 90px;
   padding: 10px;
   display: flex;
@@ -88,7 +134,7 @@ h1 {
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .container-title {
     font-size: 36px;
   }
@@ -96,10 +142,9 @@ h1 {
 
 .container-box {
   width: 100%;
-
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .container-box {
     max-width: 990px;
     margin: 0 auto;
@@ -186,7 +231,7 @@ a:hover {
   margin: 30px 0 40px;
 }
 
-input[type=button] {
+input[type="button"] {
   padding: 20px 55px;
   border-radius: 8px;
   background-color: var(--box-color-red);
@@ -207,14 +252,22 @@ input[type=button] {
   color: var(--main-color--);
   margin-bottom: 30px;
 }
-
+@media (min-width: 576px){
+  #games h2{
+    font-size: 30px;
+  }
+}
+@media (min-width: 768px){
+  #games h2{
+    font-size: 36px;
+  }
+}
 .container {
   width: 100%;
   margin: 10px;
   display: flex;
   flex-wrap: wrap;
 }
-
 @media (min-width: 576px) {
   .container {
     justify-content: center;
@@ -228,7 +281,6 @@ input[type=button] {
   border-radius: 8px;
   box-shadow: 0px 4px 20px 0px #00000040;
   margin-bottom: 30px;
-
 }
 
 @media (min-width: 576px) {
@@ -268,20 +320,37 @@ input[type=button] {
   color: var(--main-color--);
 }
 
-#h2-subscribe {
-  text-align: center;
-  margin: 40px 0 16px;
-}
-
 #Subscribe {
   background-color: var(--box-color--);
   padding: 40px 10px;
   border-radius: 10px;
   box-shadow: 0px 4px 4px 0px #00000040;
 }
-@media(min-width: 576px){
-  #Subscribe{
+@media (min-width: 576px) {
+  #Subscribe {
     padding: 50px 70px;
+  }
+}
+@media (min-width: 768px) {
+  #Subscribe {
+    width: 790px;
+    margin: 0 auto;
+  }
+}
+#h2-subscribe {
+  text-align: center;
+  margin: 40px 0 16px;
+  color: var(--text-color-gray--);
+  font-size: 1.125rem;
+}
+@media (min-width: 576px) {
+  #h2-subscribe {
+    font-size: 24px;
+  }
+}
+@media (min-width: 768px) {
+  #h2-subscribe {
+    font-size: 36px;
   }
 }
 #ctrl-name,
@@ -296,7 +365,6 @@ input[type=button] {
 ::placeholder {
   font-size: 16px;
   color: #c4c4c4;
-
 }
 
 .prefers {
@@ -314,24 +382,22 @@ input[type=button] {
   font-size: 18px;
 }
 
-input[type=submit] {
+input[type="submit"] {
   align-items: center;
   background-color: #dd7e92;
   color: #fff;
   font-weight: bold;
 }
 
-input[type=reset] {
+input[type="reset"] {
   background-color: var(--text-color-white);
   border: 2px solid var(--box-color-red);
   color: #dd7e92;
   font-weight: bold;
   align-items: center;
-
 }
 @media (min-width: 576px) {
-  
-  .bottons{
+  .bottons {
     display: flex;
     justify-content: center;
   }
